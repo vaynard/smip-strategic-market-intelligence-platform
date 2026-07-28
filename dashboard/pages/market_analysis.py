@@ -28,7 +28,6 @@ ranking = loader.topsis_ranking()
 # ==================================================
 st.title("Market Analysis")
 st.caption("Evaluate market attractiveness across candidate countries using Multi-Criteria Decision Analysis (MCDA) and TOPSIS.")
-st.divider()
 
 # ==================================================
 # Executive Summary

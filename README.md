@@ -13,7 +13,7 @@
 
 <p align="center">
 
-🌐 **Live Demo:** www.google.com
+🌐 **Live Demo:** https://smip-strategic-market-intelligence-platform.streamlit.app/
 
 👤 **LinkedIn:** https://www.linkedin.com/in/roiki-then/
 
@@ -71,7 +71,7 @@ The dashboard provides an end-to-end decision-support workflow, from strategic m
 ## 🏠 Home
 
 <p align="center">
-<img src="docs/images/home.png" width="900">
+<img src="docs/smip-home.png" width="900">
 </p>
 
 Provides an overview of the platform, project objectives, analytical workflow, dashboard modules, and repository links.
@@ -81,7 +81,7 @@ Provides an overview of the platform, project objectives, analytical workflow, d
 ## 📈 Executive Summary
 
 <p align="center">
-<img src="docs/images/executive_summary.png" width="900">
+<img src="docs/smip-recommendation.png" width="900">
 </p>
 
 Summarizes the overall market evaluation using executive KPIs, market rankings, financial highlights, and strategic recommendations.
@@ -91,7 +91,7 @@ Summarizes the overall market evaluation using executive KPIs, market rankings, 
 ## 🌍 Market Analysis
 
 <p align="center">
-<img src="docs/images/market_analysis.png" width="900">
+<img src="docs/smip-market.png" width="900">
 </p>
 
 Interactive market evaluation including:
@@ -107,7 +107,7 @@ Interactive market evaluation including:
 ## 💰 Financial Analysis
 
 <p align="center">
-<img src="docs/images/financial_analysis.png" width="900">
+<img src="docs/smip-financial.png" width="900">
 </p>
 
 Financial feasibility assessment including:
@@ -125,7 +125,7 @@ Financial feasibility assessment including:
 ## 📚 Methodology
 
 <p align="center">
-<img src="docs/images/methodology.png" width="900">
+<img src="docs/smip-methodology.png" width="900">
 </p>
 
 Documents the complete analytical framework, including the data pipeline, MCDA methodology, TOPSIS ranking process, and financial modeling workflow.
@@ -135,7 +135,7 @@ Documents the complete analytical framework, including the data pipeline, MCDA m
 ## ⚙️ Assumptions
 
 <p align="center">
-<img src="docs/images/assumptions.png" width="900">
+<img src="docs/smip-assumptions.png" width="900">
 </p>
 
 Provides full transparency of configurable business assumptions, indicator definitions, weighting schemes, financial parameters, recommendation criteria, and evaluation rules used throughout the platform.
