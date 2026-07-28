@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#FF5A00"          # The ONE Accent Pop (Hermès Premium Orange)
+backgroundColor = "#FFFFFF"       # Crisp, Pure Paper White
+secondaryBackgroundColor = "#F8F9FA" # Ultra-light clinical gray for cards & sidebar
+textColor = "#111111"             # Deep Matte Ink Black
+font = "sans serif"               # Structural geometric typography (no more serifs)

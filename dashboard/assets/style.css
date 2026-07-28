@@ -1,0 +1,161 @@
+/* assets/style.css - Balanced Split Architecture Rules */
+.stApp {
+    background-color: #ffffff !important;
+}
+
+/* Master corporate block alignment */
+.luxury-text-box {
+    background-color: #ffffff;
+    border-top: 2px solid #0f172a;
+    padding-top: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Identical institutional header specs for perfect horizontal alignment */
+.institutional-header {
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    color: #94a3b8 !important;
+    margin-bottom: 1.5rem !important; /* Forces strict baseline grid alignment */
+}
+
+/* Clean data strips for metrics presentation */
+.corporate-data-strip {
+    border-bottom: 1px solid #f1f5f9;
+    padding: 0.65rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.corporate-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #475569;
+}
+
+.corporate-value {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+/* assets/style.css tambahan untuk Seksi 2 & 3 */
+.corporate-narrative-box {
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.narrative-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #475569;
+    margin-bottom: 0.5rem;
+}
+/* Judul Seksi Utama Korporat */
+.corporate-section-title {
+    font-size: 1.15rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    color: #0f172a !important;
+    margin-top: 2rem !important;
+    margin-bottom: 0.25rem !important;
+}
+
+.corporate-section-subtitle {
+    font-size: 0.85rem !important;
+    color: #64748b !important;
+    margin-bottom: 1.25rem !important;
+}
+
+/* Tata letak horizon lebar untuk seksi yang dibongkar */
+.horizon-data-block {
+    background-color: #ffffff;
+    border-top: 2px solid #0f172a;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    height: 100%;
+}
+
+.horizon-text-block {
+    padding-top: 1.5rem;
+    margin-top: 0.5rem;
+    height: 100%;
+}
+
+.workflow-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+}
+
+/* Modul kartu alur dengan ukuran tinggi dan lebar yang dikunci seragam */
+.workflow-uniform-capsule {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 12px rgba(148, 163, 184, 0.05);
+    border-top: 4px solid #0f172a; /* Garis jangkar di atas agar rapi */
+    height: 110px; /* Mengunci tinggi kotak secara absolut */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.workflow-uniform-capsule.final-stage {
+    border-top: 4px solid #10b981; /* Warna hijau emerald khusus untuk output akhir */
+    background: linear-gradient(to bottom, #ffffff, #f0fdf4);
+}
+
+.workflow-phase-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.workflow-phase-badge.final-badge {
+    color: #10b981;
+}
+
+.workflow-step-text {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.4;
+    display: block;
+}
+
+/* Mengatur panah penunjuk arah kustom yang menempel rapi di dalam kotak */
+.workflow-arrow-indicator {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #cbd5e1;
+    position: absolute;
+    right: -1rem;
+    top: 40%;
+    z-index: 10;
+}
+
+/* Menghilangkan panah pada elemen terakhir di dalam baris grid */
+.workflow-uniform-capsule:last-child .workflow-arrow-indicator {
+    display: none !important;
+}
+

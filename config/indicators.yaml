@@ -1,0 +1,255 @@
+indicators:
+
+  # ==========================================================
+  # MARKET OPPORTUNITY
+  # ==========================================================
+
+  NY.GDP.MKTP.KD.ZG:
+    name: "GDP Growth Rate"
+    description: "Annual percentage growth rate of GDP"
+    source: "World Bank"
+    unit: "%"
+    dimension: "Market Opportunity"
+    role: "Opportunity Driver"
+    direction: "benefit"
+    aggregation: "mean"
+    lookback_years: 5
+    normalization: "min_max"
+    required: true
+    validation:
+      min: -30
+      max: 30
+
+  NY.GDP.PCAP.CD:
+    name: "GDP Per Capita"
+    description: "GDP divided by population"
+    source: "World Bank"
+    unit: "USD"
+    dimension: "Market Opportunity"
+    role: "Purchasing Power Indicator"
+    direction: "benefit"
+    aggregation: "latest"
+    lookback_years: 1
+    normalization: "min_max"
+    required: true
+    validation:
+      positive_only: true
+
+  SP.POP.TOTL:
+    name: "Population Size"
+    description: "Total population"
+    source: "World Bank"
+    unit: "People"
+    dimension: "Market Opportunity"
+    role: "Market Scale Indicator"
+    direction: "benefit"
+    aggregation: "latest"
+    lookback_years: 1
+    normalization: "min_max"
+    required: true
+    validation:
+      positive_only: true
+
+
+  # ==========================================================
+  # ECONOMIC STABILITY
+  # ==========================================================
+
+  FP.CPI.TOTL.ZG:
+    name: "Inflation Rate"
+    description: "Annual consumer price inflation"
+    source: "World Bank"
+    unit: "%"
+    dimension: "Economic Stability"
+    role: "Price Stability Indicator"
+    direction: "cost"
+    aggregation: "mean"
+    lookback_years: 5
+    normalization: "min_max"
+    required: true
+    validation:
+      allow_negative: true
+
+  SL.UEM.TOTL.ZS:
+    name: "Unemployment Rate"
+    description: "Total unemployment as percentage of total labor force"
+    source: "World Bank"
+    unit: "%"
+    dimension: "Economic Stability"
+    role: "Labor Market Indicator"
+    direction: "cost"
+    aggregation: "mean"
+    lookback_years: 5
+    normalization: "min_max"
+    required: true
+    validation:
+      min: 0
+      max: 100
+
+  GC.DOD.TOTL.GD.ZS:
+    name: "Government Debt"
+    description: "Central government debt as percentage of GDP"
+    source: "World Bank"
+    unit: "% of GDP"
+    dimension: "Economic Stability"
+    role: "Fiscal Sustainability Indicator"
+    direction: "cost"
+    aggregation: "latest"
+    lookback_years: 1
+    normalization: "min_max"
+    required: true
+    validation:
+      positive_only: true
+
+
+  # ==========================================================
+  # INFRASTRUCTURE & DIGITAL READINESS
+  # ==========================================================
+
+  IT.NET.USER.ZS:
+    name: "Internet Penetration"
+    description: "Percentage of population using the internet"
+    source: "World Bank"
+    unit: "%"
+    dimension: "Infrastructure & Digital Readiness"
+    role: "Digital Connectivity Indicator"
+    direction: "benefit"
+    aggregation: "latest"
+    lookback_years: 1
+    normalization: "min_max"
+    required: true
+    validation:
+      min: 0
+      max: 100
+
+  EG.ELC.ACCS.ZS:
+    name: "Access to Electricity"
+    description: "Population with access to electricity"
+    source: "World Bank"
+    unit: "%"
+    dimension: "Infrastructure & Digital Readiness"
+    role: "Basic Infrastructure Indicator"
+    direction: "benefit"
+    aggregation: "latest"
+    lookback_years: 1
+    normalization: "min_max"
+    required: true
+    validation:
+      min: 0
+      max: 100
+
+  IT.NET.BBND.P2:
+    name: "Fixed Broadband Subscriptions"
+    description: "Fixed broadband subscriptions per 100 people"
+    source: "World Bank"
+    unit: "Subscriptions per 100 people"
+    dimension: "Infrastructure & Digital Readiness"
+    role: "Digital Infrastructure Indicator"
+    direction: "benefit"
+    aggregation: "latest"
+    lookback_years: 1
+    normalization: "min_max"
+    required: true
+    validation:
+      positive_only: true
+
+
+  # ==========================================================
+  # BUSINESS ENVIRONMENT
+  # ==========================================================
+
+  FS.AST.PRVT.GD.ZS:
+    name: "Private Sector Credit"
+    description: "Domestic credit to private sector as percentage of GDP"
+    source: "World Bank"
+    unit: "% of GDP"
+    dimension: "Business Environment"
+    role: "Business Financing Indicator"
+    direction: "benefit"
+    aggregation: "latest"
+    lookback_years: 1
+    normalization: "min_max"
+    required: true
+    validation:
+      positive_only: true
+
+  IC.BUS.NDNS.ZS:
+    name: "New Business Density"
+    description: "Newly registered businesses per 1,000 working-age adults"
+    source: "World Bank"
+    unit: "Businesses per 1,000 adults"
+    dimension: "Business Environment"
+    role: "Entrepreneurship Indicator"
+    direction: "benefit"
+    aggregation: "latest"
+    lookback_years: 1
+    normalization: "min_max"
+    required: true
+    validation:
+      positive_only: true
+
+  IC.REG.DURS:
+    name: "Business Registration Time"
+    description: "Time required to start a business"
+    source: "World Bank"
+    unit: "Days"
+    dimension: "Business Environment"
+    role: "Regulatory Efficiency Indicator"
+    direction: "cost"
+    aggregation: "latest"
+    lookback_years: 1
+    normalization: "min_max"
+    required: false
+    validation:
+      positive_only: true
+
+
+  # ==========================================================
+  # MARKET ACCESSIBILITY
+  # ==========================================================
+
+  NE.TRD.GNFS.ZS:
+    name: "Trade Openness"
+    description: "Trade volume as percentage of GDP"
+    source: "World Bank"
+    unit: "% of GDP"
+    dimension: "Market Accessibility"
+    role: "International Connectivity Indicator"
+    direction: "benefit"
+    aggregation: "latest"
+    lookback_years: 1
+    normalization: "min_max"
+    required: true
+    validation:
+      positive_only: true
+
+  BX.KLT.DINV.WD.GD.ZS:
+    name: "FDI Inflows"
+    description: "Foreign direct investment net inflows as percentage of GDP"
+    source: "World Bank"
+    unit: "% of GDP"
+    dimension: "Market Accessibility"
+    role: "Investor Attractiveness Indicator"
+    direction: "benefit"
+    aggregation: "mean"
+    lookback_years: 5
+    normalization: "min_max"
+    required: true
+    validation:
+      allow_negative: true
+
+  LP.LPI.OVRL.XQ:
+    name: "Logistics Performance Index"
+    description: "Overall logistics performance score"
+    source: "World Bank"
+    unit: "Index"
+    dimension: "Market Accessibility"
+    role: "Logistics Capability Indicator"
+    direction: "benefit"
+    aggregation: "latest"
+    lookback_years: 1
+    normalization: "min_max"
+    required: false
+    validation:
+      min: 1
+      max: 5

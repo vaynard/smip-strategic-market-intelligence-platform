@@ -1,0 +1,26 @@
+country,country_name,dimension,dimension_weight,normalized_score,weighted_score
+IDN,Indonesia,Business Environment,0.2,0.0,0.0
+IDN,Indonesia,Economic Stability,0.25,52.576336037221004,13.144084009305251
+IDN,Indonesia,Infrastructure & Digital Readiness,0.15,0.0,0.0
+IDN,Indonesia,Market Accessibility,0.1,0.0,0.0
+IDN,Indonesia,Market Opportunity,0.3,54.695011491518834,16.40850344745565
+MYS,Malaysia,Business Environment,0.2,44.966318684092144,8.99326373681843
+MYS,Malaysia,Economic Stability,0.25,46.47395448799001,11.618488621997502
+MYS,Malaysia,Infrastructure & Digital Readiness,0.15,79.22504789755978,11.883757184633966
+MYS,Malaysia,Market Accessibility,0.1,19.74819438142348,1.9748194381423483
+MYS,Malaysia,Market Opportunity,0.3,31.178401655139556,9.353520496541867
+SGP,Singapore,Business Environment,0.2,93.14103684307248,18.628207368614497
+SGP,Singapore,Economic Stability,0.25,6.004618937644342,1.5011547344110856
+SGP,Singapore,Infrastructure & Digital Readiness,0.15,95.18878010552733,14.2783170158291
+SGP,Singapore,Market Accessibility,0.1,100.0,10.0
+SGP,Singapore,Market Opportunity,0.3,57.75578459663473,17.32673537899042
+THA,Thailand,Business Environment,0.2,53.781011493786984,10.756202298757398
+THA,Thailand,Economic Stability,0.25,92.29232573947347,23.073081434868367
+THA,Thailand,Infrastructure & Digital Readiness,0.15,71.72989422164373,10.75948413324656
+THA,Thailand,Market Accessibility,0.1,19.09125814046944,1.909125814046944
+THA,Thailand,Market Opportunity,0.3,8.875057542788907,2.6625172628366722
+VNM,Vietnam,Business Environment,0.2,46.47333935551987,9.294667871103973
+VNM,Vietnam,Economic Stability,0.25,45.287695537739204,11.321923884434801
+VNM,Vietnam,Infrastructure & Digital Readiness,0.15,75.70797354250045,11.356196031375069
+VNM,Vietnam,Market Accessibility,0.1,31.73739069066186,3.1737390690661864
+VNM,Vietnam,Market Opportunity,0.3,44.718991190989875,13.415697357296962

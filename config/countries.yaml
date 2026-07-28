@@ -1,0 +1,16 @@
+countries:
+
+  IDN:
+    name: Indonesia
+
+  MYS:
+    name: Malaysia
+
+  SGP:
+    name: Singapore
+
+  THA:
+    name: Thailand
+
+  VNM:
+    name: Vietnam

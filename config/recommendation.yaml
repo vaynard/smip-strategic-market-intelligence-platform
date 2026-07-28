@@ -1,0 +1,41 @@
+framework:
+
+  name: "Investment Recommendation Model"
+
+  methodology:
+    "Weighted Financial Attractiveness Score"
+
+
+
+criteria:
+
+  Market Attractiveness:
+
+    weight: 0.40
+
+    rationale:
+      "Reflects strategic market potential from MCDA/TOPSIS ranking."
+
+
+  Value Creation:
+
+    weight: 0.30
+
+    rationale:
+      "Measures investment value through NPV."
+
+
+  Return Profile:
+
+    weight: 0.20
+
+    rationale:
+      "Measures profitability through IRR."
+
+
+  Capital Recovery:
+
+    weight: 0.10
+
+    rationale:
+      "Measures speed of investment recovery through payback period."

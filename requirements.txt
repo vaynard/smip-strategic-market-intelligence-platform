@@ -1,0 +1,9 @@
+pandas
+numpy
+requests
+pyyaml
+scikit-learn
+plotly
+streamlit
+openpyxl
+python-dotenv

@@ -1,0 +1,96 @@
+currency: "IDR"
+
+
+# --------------------------------------------------
+# Investment Assumptions
+# --------------------------------------------------
+
+initial_investment: 15000000000
+
+discount_rate: 0.10
+
+project_years: 5
+
+
+
+# --------------------------------------------------
+# Revenue Model
+# --------------------------------------------------
+
+base_revenue: 20000000000
+
+base_growth_rate: 0.08
+
+
+market_multiplier:
+
+  minimum: 0.80
+
+  maximum: 1.20
+
+
+revenue_score_weights:
+
+  topsis: 0.60
+
+  population: 0.20
+
+  income: 0.20
+
+
+growth_adjustment:
+
+  gdp_growth_weight: 0.50
+
+
+
+# --------------------------------------------------
+# Operating Assumptions
+# --------------------------------------------------
+
+operating_margin: 0.30
+
+tax_rate: 0.22
+
+
+
+# --------------------------------------------------
+# Sensitivity Scenarios
+# --------------------------------------------------
+
+scenarios:
+
+
+  - name: "Pessimistic"
+
+    revenue_factor: 0.80
+
+    discount_rate: 0.12
+
+    operating_margin: 0.25
+
+    tax_rate: 0.22
+
+
+
+  - name: "Base"
+
+    revenue_factor: 1.00
+
+    discount_rate: 0.10
+
+    operating_margin: 0.30
+
+    tax_rate: 0.22
+
+
+
+  - name: "Optimistic"
+
+    revenue_factor: 1.20
+
+    discount_rate: 0.08
+
+    operating_margin: 0.35
+
+    tax_rate: 0.22

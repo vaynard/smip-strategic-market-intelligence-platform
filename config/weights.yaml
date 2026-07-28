@@ -1,0 +1,47 @@
+framework:
+
+  name: "SMIP Market Entry Evaluation Model"
+
+  methodology:
+    "Multi-Criteria Decision Analysis (MCDA)"
+
+
+dimensions:
+  Market Opportunity:
+
+    weight: 0.30
+
+    rationale:
+      "Measures market attractiveness and growth potential."
+
+
+  Economic Stability:
+
+    weight: 0.25
+
+    rationale:
+      "Measures macroeconomic risks affecting investment returns."
+
+
+  Business Environment:
+
+    weight: 0.20
+
+    rationale:
+      "Measures regulatory and institutional operating conditions."
+
+
+  Infrastructure & Digital Readiness:
+
+    weight: 0.15
+
+    rationale:
+      "Measures operational capability and digital maturity."
+
+
+  Market Accessibility:
+
+    weight: 0.10
+
+    rationale:
+      "Measures barriers and ease of market entry."

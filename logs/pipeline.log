@@ -1,0 +1,835 @@
+2026-07-23 08:37:04,650 | INFO | Pipeline Started
+2026-07-23 08:38:23,178 | INFO | Collected 1387 records from World Bank
+2026-07-23 08:38:23,407 | INFO | Country enrichment completed
+2026-07-23 08:38:23,769 | INFO | Indicator enrichment completed
+2026-07-23 08:38:23,962 | INFO | Data quality validation completed
+2026-07-23 08:38:23,963 | ERROR | Pipeline Failed: AggregationEngine() takes no arguments
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 144, in run
+    aggregator = AggregationEngine(
+    
+        enriched_df
+    
+    )
+TypeError: AggregationEngine() takes no arguments
+2026-07-23 08:40:16,166 | INFO | Pipeline Started
+2026-07-23 08:40:50,491 | INFO | Collected 1387 records from World Bank
+2026-07-23 08:40:50,751 | INFO | Country enrichment completed
+2026-07-23 08:40:50,986 | INFO | Indicator enrichment completed
+2026-07-23 08:40:51,124 | INFO | Data quality validation completed
+2026-07-23 08:40:51,233 | INFO | Historical aggregation completed
+2026-07-23 08:40:51,249 | INFO | Normalization completed
+2026-07-23 08:40:51,258 | INFO | Weight assignment completed
+2026-07-23 08:40:51,280 | INFO | MCDA analysis completed
+2026-07-23 08:40:51,317 | INFO | TOPSIS ranking completed
+2026-07-23 08:40:51,317 | ERROR | Pipeline Failed: NPVCalculator.__init__() missing 2 required positional arguments: 'cash_flows' and 'discount_rate'
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 231, in run
+    npv = NPVCalculator(
+          ~~~~~~~~~~~~~^
+    
+    
+        ranking
+        ^^^^^^^
+    
+    
+    ).run()
+    ^
+TypeError: NPVCalculator.__init__() missing 2 required positional arguments: 'cash_flows' and 'discount_rate'
+2026-07-23 08:50:22,774 | INFO | Pipeline Started
+2026-07-23 08:50:56,118 | INFO | Collected 1387 records from World Bank
+2026-07-23 08:50:56,370 | INFO | Country enrichment completed
+2026-07-23 08:50:56,604 | INFO | Indicator enrichment completed
+2026-07-23 08:50:56,739 | INFO | Data quality validation completed
+2026-07-23 08:50:56,810 | INFO | Historical aggregation completed
+2026-07-23 08:50:56,826 | INFO | Normalization completed
+2026-07-23 08:50:56,834 | INFO | Weight assignment completed
+2026-07-23 08:50:56,852 | INFO | MCDA analysis completed
+2026-07-23 08:50:56,876 | INFO | TOPSIS ranking completed
+2026-07-23 08:50:56,878 | INFO | Financial configuration loaded
+2026-07-23 08:50:56,879 | INFO | NPV calculation completed
+2026-07-23 08:50:56,894 | INFO | IRR calculation completed
+2026-07-23 08:50:56,895 | INFO | Payback calculation completed
+2026-07-23 08:50:56,896 | INFO | Sensitivity analysis completed
+2026-07-23 08:50:56,955 | ERROR | Pipeline Failed: 'dict' object has no attribute 'to_csv'
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 392, in run
+    exporter.export_pipeline(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+    
+    
+        results
+        ^^^^^^^
+    
+    
+    )
+    ^
+  File "D:\a\market-entry-project\src\utils\csv_exporter.py", line 141, in export_pipeline
+    self.export(
+    ~~~~~~~~~~~^
+    
+    
+    ...<5 lines>...
+    
+    
+    )
+    ^
+  File "D:\a\market-entry-project\src\utils\csv_exporter.py", line 38, in export
+    dataframe.to_csv(
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'to_csv'
+2026-07-23 08:53:10,876 | INFO | Pipeline Started
+2026-07-23 08:53:43,430 | INFO | Collected 1387 records from World Bank
+2026-07-23 08:53:43,668 | INFO | Country enrichment completed
+2026-07-23 08:53:43,923 | INFO | Indicator enrichment completed
+2026-07-23 08:53:44,055 | INFO | Data quality validation completed
+2026-07-23 08:53:44,131 | INFO | Historical aggregation completed
+2026-07-23 08:53:44,146 | INFO | Normalization completed
+2026-07-23 08:53:44,154 | INFO | Weight assignment completed
+2026-07-23 08:53:44,172 | INFO | MCDA analysis completed
+2026-07-23 08:53:44,196 | INFO | TOPSIS ranking completed
+2026-07-23 08:53:44,199 | INFO | Financial configuration loaded
+2026-07-23 08:53:44,199 | INFO | NPV calculation completed
+2026-07-23 08:53:44,200 | INFO | IRR calculation completed
+2026-07-23 08:53:44,201 | INFO | Payback calculation completed
+2026-07-23 08:53:44,203 | INFO | Sensitivity analysis completed
+2026-07-23 08:53:44,278 | INFO | CSV export completed
+2026-07-23 08:53:44,278 | INFO | Pipeline Finished Successfully
+2026-07-23 09:30:04,546 | INFO | Pipeline Started
+2026-07-23 09:30:37,429 | INFO | Collected 1387 records from World Bank
+2026-07-23 09:30:37,670 | INFO | Country enrichment completed
+2026-07-23 09:30:37,901 | INFO | Indicator enrichment completed
+2026-07-23 09:30:38,041 | INFO | Data quality validation completed
+2026-07-23 09:30:38,117 | INFO | Historical aggregation completed
+2026-07-23 09:30:38,132 | INFO | Normalization completed
+2026-07-23 09:30:38,138 | INFO | Weight assignment completed
+2026-07-23 09:30:38,160 | INFO | MCDA analysis completed
+2026-07-23 09:30:38,202 | INFO | TOPSIS ranking completed
+2026-07-23 09:30:38,203 | INFO | Financial configuration loaded
+2026-07-23 09:30:38,205 | INFO | Revenue projection completed
+2026-07-23 09:30:38,210 | INFO | Cash flow generation completed
+2026-07-23 09:30:38,253 | INFO | Country financial metrics completed
+2026-07-23 09:30:38,376 | INFO | Sensitivity analysis completed
+2026-07-23 09:30:38,443 | INFO | CSV export completed
+2026-07-23 09:30:38,444 | INFO | Pipeline Finished Successfully
+2026-07-23 10:40:02,966 | INFO | Pipeline Started
+2026-07-23 10:40:36,558 | INFO | Collected 1387 records from World Bank
+2026-07-23 10:40:36,793 | INFO | Country enrichment completed
+2026-07-23 10:40:37,044 | INFO | Indicator enrichment completed
+2026-07-23 10:40:37,178 | INFO | Data quality validation completed
+2026-07-23 10:40:37,244 | INFO | Historical aggregation completed
+2026-07-23 10:40:37,261 | INFO | Normalization completed
+2026-07-23 10:40:37,282 | INFO | Weight assignment completed
+2026-07-23 10:40:37,303 | INFO | MCDA analysis completed
+2026-07-23 10:40:37,334 | INFO | TOPSIS ranking completed
+2026-07-23 10:40:37,337 | INFO | Financial configuration loaded
+2026-07-23 10:40:37,339 | INFO | Revenue projection completed
+2026-07-23 10:40:37,342 | INFO | Cash flow generation completed
+2026-07-23 10:40:37,377 | INFO | Country financial metrics completed
+2026-07-23 10:40:37,493 | INFO | Sensitivity analysis completed
+2026-07-23 10:40:37,558 | INFO | CSV export completed
+2026-07-23 10:40:37,558 | INFO | Pipeline Finished Successfully
+2026-07-23 10:46:48,784 | INFO | Pipeline Started
+2026-07-23 10:47:21,847 | INFO | Collected 1387 records from World Bank
+2026-07-23 10:47:22,088 | INFO | Country enrichment completed
+2026-07-23 10:47:22,327 | INFO | Indicator enrichment completed
+2026-07-23 10:47:22,465 | INFO | Data quality validation completed
+2026-07-23 10:47:22,536 | INFO | Historical aggregation completed
+2026-07-23 10:47:22,552 | INFO | Normalization completed
+2026-07-23 10:47:22,560 | INFO | Weight assignment completed
+2026-07-23 10:47:22,579 | INFO | MCDA analysis completed
+2026-07-23 10:47:22,603 | INFO | TOPSIS ranking completed
+2026-07-23 10:47:22,605 | INFO | Financial configuration loaded
+2026-07-23 10:47:22,607 | INFO | Revenue projection completed
+2026-07-23 10:47:22,611 | INFO | Cash flow generation completed
+2026-07-23 10:47:22,637 | INFO | Country financial metrics completed
+2026-07-23 10:47:22,755 | INFO | Sensitivity analysis completed
+2026-07-23 10:47:22,821 | INFO | CSV export completed
+2026-07-23 10:47:22,821 | INFO | Pipeline Finished Successfully
+2026-07-23 11:02:27,153 | INFO | Pipeline Started
+2026-07-23 11:02:59,362 | INFO | Collected 1387 records from World Bank
+2026-07-23 11:02:59,576 | INFO | Country enrichment completed
+2026-07-23 11:02:59,819 | INFO | Indicator enrichment completed
+2026-07-23 11:02:59,979 | INFO | Data quality validation completed
+2026-07-23 11:03:00,071 | INFO | Historical aggregation completed
+2026-07-23 11:03:00,089 | INFO | Normalization completed
+2026-07-23 11:03:00,099 | INFO | Weight assignment completed
+2026-07-23 11:03:00,120 | INFO | MCDA analysis completed
+2026-07-23 11:03:00,152 | INFO | TOPSIS ranking completed
+2026-07-23 11:03:00,154 | INFO | Financial configuration loaded
+2026-07-23 11:03:00,156 | INFO | Revenue projection completed
+2026-07-23 11:03:00,160 | INFO | Cash flow generation completed
+2026-07-23 11:03:00,195 | INFO | Country financial metrics completed
+2026-07-23 11:03:00,232 | INFO | Investment recommendation completed
+2026-07-23 11:03:00,359 | INFO | Sensitivity analysis completed
+2026-07-23 11:03:00,437 | INFO | CSV export completed
+2026-07-23 11:03:00,438 | INFO | Pipeline Finished Successfully
+2026-07-23 11:41:13,142 | INFO | Pipeline Started
+2026-07-23 11:41:45,204 | INFO | Collected 1387 records from World Bank
+2026-07-23 11:41:45,474 | INFO | Country enrichment completed
+2026-07-23 11:41:45,720 | INFO | Indicator enrichment completed
+2026-07-23 11:41:45,868 | INFO | Data quality validation completed
+2026-07-23 11:41:45,951 | INFO | Historical aggregation completed
+2026-07-23 11:41:45,968 | INFO | Normalization completed
+2026-07-23 11:41:45,976 | INFO | Weight assignment completed
+2026-07-23 11:41:46,000 | INFO | MCDA analysis completed
+2026-07-23 11:41:46,041 | INFO | TOPSIS ranking completed
+2026-07-23 11:41:46,044 | INFO | Financial configuration loaded
+2026-07-23 11:41:46,047 | INFO | Revenue projection completed
+2026-07-23 11:41:46,051 | INFO | Cash flow generation completed
+2026-07-23 11:41:46,092 | INFO | Country financial metrics completed
+2026-07-23 11:41:46,125 | INFO | Investment recommendation completed
+2026-07-23 11:41:46,251 | INFO | Sensitivity analysis completed
+2026-07-23 11:41:46,321 | INFO | CSV export completed
+2026-07-23 11:41:46,321 | INFO | Pipeline Finished Successfully
+2026-07-23 13:00:28,681 | INFO | Pipeline Started
+2026-07-23 13:04:52,616 | INFO | Collected 1954 records from World Bank
+2026-07-23 13:04:52,914 | INFO | Country enrichment completed
+2026-07-23 13:04:53,243 | INFO | Indicator enrichment completed
+2026-07-23 13:04:53,437 | INFO | Data quality validation completed
+2026-07-23 13:04:53,538 | INFO | Historical aggregation completed
+2026-07-23 13:04:53,557 | INFO | Normalization completed
+2026-07-23 13:04:53,565 | INFO | Weight assignment completed
+2026-07-23 13:04:53,587 | INFO | MCDA analysis completed
+2026-07-23 13:04:53,628 | INFO | TOPSIS ranking completed
+2026-07-23 13:04:53,630 | INFO | Financial configuration loaded
+2026-07-23 13:04:53,633 | INFO | Revenue projection completed
+2026-07-23 13:04:53,637 | INFO | Cash flow generation completed
+2026-07-23 13:04:53,681 | INFO | Country financial metrics completed
+2026-07-23 13:04:53,710 | INFO | Investment recommendation completed
+2026-07-23 13:04:53,820 | INFO | Sensitivity analysis completed
+2026-07-23 13:04:53,905 | INFO | CSV export completed
+2026-07-23 13:04:53,905 | INFO | Pipeline Finished Successfully
+2026-07-23 13:05:29,397 | INFO | Pipeline Started
+2026-07-23 13:06:25,605 | INFO | Collected 1954 records from World Bank
+2026-07-23 13:06:25,900 | INFO | Country enrichment completed
+2026-07-23 13:06:26,241 | INFO | Indicator enrichment completed
+2026-07-23 13:06:26,424 | INFO | Data quality validation completed
+2026-07-23 13:06:26,518 | INFO | Historical aggregation completed
+2026-07-23 13:06:26,538 | INFO | Normalization completed
+2026-07-23 13:06:26,546 | INFO | Weight assignment completed
+2026-07-23 13:06:26,564 | INFO | MCDA analysis completed
+2026-07-23 13:06:26,588 | INFO | TOPSIS ranking completed
+2026-07-23 13:06:26,590 | INFO | Financial configuration loaded
+2026-07-23 13:06:26,592 | INFO | Revenue projection completed
+2026-07-23 13:06:26,596 | INFO | Cash flow generation completed
+2026-07-23 13:06:26,622 | INFO | Country financial metrics completed
+2026-07-23 13:06:26,646 | INFO | Investment recommendation completed
+2026-07-23 13:06:26,756 | INFO | Sensitivity analysis completed
+2026-07-23 13:06:26,835 | INFO | CSV export completed
+2026-07-23 13:06:26,835 | INFO | Pipeline Finished Successfully
+2026-07-23 13:10:26,145 | INFO | Pipeline Started
+2026-07-23 13:14:04,147 | INFO | Collected 2234 records from World Bank
+2026-07-23 13:14:04,493 | INFO | Country enrichment completed
+2026-07-23 13:14:04,855 | INFO | Indicator enrichment completed
+2026-07-23 13:14:05,071 | INFO | Data quality validation completed
+2026-07-23 13:14:05,184 | INFO | Historical aggregation completed
+2026-07-23 13:14:05,207 | INFO | Normalization completed
+2026-07-23 13:14:05,215 | INFO | Weight assignment completed
+2026-07-23 13:14:05,233 | INFO | MCDA analysis completed
+2026-07-23 13:14:05,256 | INFO | TOPSIS ranking completed
+2026-07-23 13:14:05,258 | INFO | Financial configuration loaded
+2026-07-23 13:14:05,260 | INFO | Revenue projection completed
+2026-07-23 13:14:05,265 | INFO | Cash flow generation completed
+2026-07-23 13:14:05,290 | INFO | Country financial metrics completed
+2026-07-23 13:14:05,315 | INFO | Investment recommendation completed
+2026-07-23 13:14:05,424 | INFO | Sensitivity analysis completed
+2026-07-23 13:14:05,512 | INFO | CSV export completed
+2026-07-23 13:14:05,512 | INFO | Pipeline Finished Successfully
+2026-07-23 13:22:52,712 | INFO | Pipeline Started
+2026-07-23 13:23:54,839 | INFO | Collected 2234 records from World Bank
+2026-07-23 13:23:55,181 | INFO | Country enrichment completed
+2026-07-23 13:23:55,562 | INFO | Indicator enrichment completed
+2026-07-23 13:23:55,790 | INFO | Data quality validation completed
+2026-07-23 13:23:55,917 | INFO | Historical aggregation completed
+2026-07-23 13:23:55,941 | INFO | Normalization completed
+2026-07-23 13:23:55,949 | INFO | Weight assignment completed
+2026-07-23 13:23:55,979 | INFO | MCDA analysis completed
+2026-07-23 13:23:55,980 | ERROR | Pipeline Failed: 'weighted_score'
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 228, in run
+    ranking = topsis.run()
+  File "D:\a\market-entry-project\src\analysis\topsis.py", line 196, in run
+    matrix = self.create_matrix()
+  File "D:\a\market-entry-project\src\analysis\topsis.py", line 26, in create_matrix
+    .pivot_table(
+     ~~~~~~~~~~~^
+    
+    
+    ...<10 lines>...
+    
+    
+    )
+    ^
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\frame.py", line 11159, in pivot_table
+    return pivot_table(
+        self,
+    ...<10 lines>...
+        **kwargs,
+    )
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\reshape\pivot.py", line 267, in pivot_table
+    table = __internal_pivot_table(
+        data,
+    ...<10 lines>...
+        kwargs,
+    )
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\reshape\pivot.py", line 315, in __internal_pivot_table
+    raise KeyError(i)
+KeyError: 'weighted_score'
+2026-07-23 13:28:16,634 | INFO | Pipeline Started
+2026-07-23 13:29:19,781 | INFO | Collected 2234 records from World Bank
+2026-07-23 13:29:20,144 | INFO | Country enrichment completed
+2026-07-23 13:29:20,535 | INFO | Indicator enrichment completed
+2026-07-23 13:29:20,785 | INFO | Data quality validation completed
+2026-07-23 13:29:20,922 | INFO | Historical aggregation completed
+2026-07-23 13:29:20,946 | INFO | Normalization completed
+2026-07-23 13:29:20,954 | INFO | Weight assignment completed
+2026-07-23 13:29:21,000 | INFO | MCDA analysis completed
+2026-07-23 13:29:21,034 | INFO | TOPSIS ranking completed
+2026-07-23 13:29:21,036 | INFO | Financial configuration loaded
+2026-07-23 13:29:21,038 | INFO | Revenue projection completed
+2026-07-23 13:29:21,042 | INFO | Cash flow generation completed
+2026-07-23 13:29:21,081 | INFO | Country financial metrics completed
+2026-07-23 13:29:21,115 | INFO | Investment recommendation completed
+2026-07-23 13:29:21,229 | INFO | Sensitivity analysis completed
+2026-07-23 13:29:21,325 | INFO | CSV export completed
+2026-07-23 13:29:21,325 | INFO | Pipeline Finished Successfully
+2026-07-23 13:33:10,962 | INFO | Pipeline Started
+2026-07-23 13:34:09,721 | INFO | Collected 2234 records from World Bank
+2026-07-23 13:34:10,054 | INFO | Country enrichment completed
+2026-07-23 13:34:10,422 | INFO | Indicator enrichment completed
+2026-07-23 13:34:10,632 | INFO | Data quality validation completed
+2026-07-23 13:34:10,752 | INFO | Historical aggregation completed
+2026-07-23 13:34:10,777 | INFO | Normalization completed
+2026-07-23 13:34:10,782 | INFO | Weight assignment completed
+2026-07-23 13:34:10,811 | INFO | MCDA analysis completed
+2026-07-23 13:34:10,812 | ERROR | Pipeline Failed: 'weighted_score'
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 228, in run
+    ranking = topsis.run()
+  File "D:\a\market-entry-project\src\analysis\topsis.py", line 196, in run
+    matrix = self.create_matrix()
+  File "D:\a\market-entry-project\src\analysis\topsis.py", line 26, in create_matrix
+    .pivot_table(
+     ~~~~~~~~~~~^
+    
+    
+    ...<10 lines>...
+    
+    
+    )
+    ^
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\frame.py", line 11159, in pivot_table
+    return pivot_table(
+        self,
+    ...<10 lines>...
+        **kwargs,
+    )
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\reshape\pivot.py", line 267, in pivot_table
+    table = __internal_pivot_table(
+        data,
+    ...<10 lines>...
+        kwargs,
+    )
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\reshape\pivot.py", line 315, in __internal_pivot_table
+    raise KeyError(i)
+KeyError: 'weighted_score'
+2026-07-23 13:36:03,070 | INFO | Pipeline Started
+2026-07-23 13:37:01,306 | INFO | Collected 2234 records from World Bank
+2026-07-23 13:37:01,676 | INFO | Country enrichment completed
+2026-07-23 13:37:02,052 | INFO | Indicator enrichment completed
+2026-07-23 13:37:02,264 | INFO | Data quality validation completed
+2026-07-23 13:37:02,383 | INFO | Historical aggregation completed
+2026-07-23 13:37:02,413 | INFO | Normalization completed
+2026-07-23 13:37:02,418 | INFO | Weight assignment completed
+2026-07-23 13:37:02,446 | INFO | MCDA analysis completed
+2026-07-23 13:37:02,448 | ERROR | Pipeline Failed: 'weighted_score'
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 228, in run
+    ranking = topsis.run()
+  File "D:\a\market-entry-project\src\analysis\topsis.py", line 196, in run
+    matrix = self.create_matrix()
+  File "D:\a\market-entry-project\src\analysis\topsis.py", line 26, in create_matrix
+    .pivot_table(
+     ~~~~~~~~~~~^
+    
+    
+    ...<10 lines>...
+    
+    
+    )
+    ^
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\frame.py", line 11159, in pivot_table
+    return pivot_table(
+        self,
+    ...<10 lines>...
+        **kwargs,
+    )
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\reshape\pivot.py", line 267, in pivot_table
+    table = __internal_pivot_table(
+        data,
+    ...<10 lines>...
+        kwargs,
+    )
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\reshape\pivot.py", line 315, in __internal_pivot_table
+    raise KeyError(i)
+KeyError: 'weighted_score'
+2026-07-23 13:44:36,436 | INFO | Pipeline Started
+2026-07-23 13:45:39,971 | INFO | Collected 2234 records from World Bank
+2026-07-23 13:45:40,318 | INFO | Country enrichment completed
+2026-07-23 13:45:40,688 | INFO | Indicator enrichment completed
+2026-07-23 13:45:40,896 | INFO | Data quality validation completed
+2026-07-23 13:45:41,020 | INFO | Historical aggregation completed
+2026-07-23 13:45:41,043 | INFO | Normalization completed
+2026-07-23 13:45:41,048 | INFO | Weight assignment completed
+2026-07-23 13:45:41,079 | INFO | MCDA analysis completed
+2026-07-23 13:45:41,096 | INFO | TOPSIS ranking completed
+2026-07-23 13:45:41,098 | INFO | Financial configuration loaded
+2026-07-23 13:45:41,100 | INFO | Revenue projection completed
+2026-07-23 13:45:41,103 | INFO | Cash flow generation completed
+2026-07-23 13:45:41,130 | INFO | Country financial metrics completed
+2026-07-23 13:45:41,155 | INFO | Investment recommendation completed
+2026-07-23 13:45:41,263 | INFO | Sensitivity analysis completed
+2026-07-23 13:45:41,351 | INFO | CSV export completed
+2026-07-23 13:45:41,351 | INFO | Pipeline Finished Successfully
+2026-07-23 13:46:00,200 | INFO | Pipeline Started
+2026-07-23 13:46:59,667 | INFO | Collected 2234 records from World Bank
+2026-07-23 13:47:00,010 | INFO | Country enrichment completed
+2026-07-23 13:47:00,375 | INFO | Indicator enrichment completed
+2026-07-23 13:47:00,584 | INFO | Data quality validation completed
+2026-07-23 13:47:00,693 | INFO | Historical aggregation completed
+2026-07-23 13:47:00,714 | INFO | Normalization completed
+2026-07-23 13:47:00,721 | INFO | Weight assignment completed
+2026-07-23 13:47:00,752 | INFO | MCDA analysis completed
+2026-07-23 13:47:00,768 | INFO | TOPSIS ranking completed
+2026-07-23 13:47:00,770 | INFO | Financial configuration loaded
+2026-07-23 13:47:00,772 | INFO | Revenue projection completed
+2026-07-23 13:47:00,776 | INFO | Cash flow generation completed
+2026-07-23 13:47:00,801 | INFO | Country financial metrics completed
+2026-07-23 13:47:00,826 | INFO | Investment recommendation completed
+2026-07-23 13:47:00,933 | INFO | Sensitivity analysis completed
+2026-07-23 13:47:01,020 | INFO | CSV export completed
+2026-07-23 13:47:01,020 | INFO | Pipeline Finished Successfully
+2026-07-23 14:07:54,108 | INFO | Pipeline Started
+2026-07-23 14:09:49,567 | INFO | Collected 2790 records from World Bank
+2026-07-23 14:09:50,024 | INFO | Country enrichment completed
+2026-07-23 14:09:50,537 | INFO | Indicator enrichment completed
+2026-07-23 14:09:50,816 | INFO | Data quality validation completed
+2026-07-23 14:09:50,999 | INFO | Historical aggregation completed
+2026-07-23 14:09:51,033 | INFO | Normalization completed
+2026-07-23 14:09:51,040 | INFO | Weight assignment completed
+2026-07-23 14:09:51,076 | INFO | MCDA analysis completed
+2026-07-23 14:09:51,093 | INFO | TOPSIS ranking completed
+2026-07-23 14:09:51,096 | INFO | Financial configuration loaded
+2026-07-23 14:09:51,099 | INFO | Revenue projection completed
+2026-07-23 14:09:51,104 | INFO | Cash flow generation completed
+2026-07-23 14:09:51,132 | INFO | Country financial metrics completed
+2026-07-23 14:09:51,161 | INFO | Investment recommendation completed
+2026-07-23 14:09:51,286 | INFO | Sensitivity analysis completed
+2026-07-23 14:09:51,393 | INFO | CSV export completed
+2026-07-23 14:09:51,393 | INFO | Pipeline Finished Successfully
+2026-07-23 14:14:20,371 | INFO | Pipeline Started
+2026-07-23 14:16:58,339 | INFO | Collected 2790 records from World Bank
+2026-07-23 14:16:58,770 | INFO | Country enrichment completed
+2026-07-23 14:16:59,256 | INFO | Indicator enrichment completed
+2026-07-23 14:16:59,574 | INFO | Data quality validation completed
+2026-07-23 14:16:59,754 | INFO | Historical aggregation completed
+2026-07-23 14:16:59,783 | INFO | Normalization completed
+2026-07-23 14:16:59,791 | INFO | Weight assignment completed
+2026-07-23 14:16:59,841 | INFO | MCDA analysis completed
+2026-07-23 14:16:59,865 | INFO | TOPSIS ranking completed
+2026-07-23 14:16:59,867 | INFO | Financial configuration loaded
+2026-07-23 14:16:59,869 | INFO | Revenue projection completed
+2026-07-23 14:16:59,874 | INFO | Cash flow generation completed
+2026-07-23 14:16:59,917 | INFO | Country financial metrics completed
+2026-07-23 14:16:59,951 | INFO | Investment recommendation completed
+2026-07-23 14:17:00,268 | INFO | Sensitivity analysis completed
+2026-07-23 14:17:00,442 | INFO | CSV export completed
+2026-07-23 14:17:00,442 | INFO | Pipeline Finished Successfully
+2026-07-23 14:29:17,765 | INFO | Pipeline Started
+2026-07-23 14:30:51,060 | INFO | Collected 2790 records from World Bank
+2026-07-23 14:30:51,613 | INFO | Country enrichment completed
+2026-07-23 14:30:52,227 | INFO | Indicator enrichment completed
+2026-07-23 14:30:52,507 | INFO | Data quality validation completed
+2026-07-23 14:30:52,700 | INFO | Historical aggregation completed
+2026-07-23 14:30:52,736 | INFO | Normalization completed
+2026-07-23 14:30:52,744 | INFO | Weight assignment completed
+2026-07-23 14:30:52,782 | INFO | MCDA analysis completed
+2026-07-23 14:30:52,800 | INFO | TOPSIS ranking completed
+2026-07-23 14:30:52,803 | INFO | Financial configuration loaded
+2026-07-23 14:30:52,825 | ERROR | Pipeline Failed: "['population'] not in index"
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 265, in run
+    ).run()
+      ~~~^^
+  File "D:\a\market-entry-project\src\financial\financial_input.py", line 53, in run
+    population = self.extract_indicator(
+        "SP.POP.TOTL",
+        "population"
+    )
+  File "D:\a\market-entry-project\src\financial\financial_input.py", line 27, in extract_indicator
+    self.aggregated_df
+    ~~~~~~~~~~~~~~~~~~
+    
+    
+    .loc[
+    ~~~~^
+        self.aggregated_df["indicator"] == indicator_code,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        ]
+        ^
+    ]
+    ^
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\indexing.py", line 1200, in __getitem__
+    return self._getitem_tuple(key)
+           ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\indexing.py", line 1386, in _getitem_tuple
+    return self._getitem_lowerdim(tup)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\indexing.py", line 1093, in _getitem_lowerdim
+    section = self._getitem_axis(key, axis=i)
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\indexing.py", line 1438, in _getitem_axis
+    return self._getitem_iterable(key, axis=axis)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\indexing.py", line 1378, in _getitem_iterable
+    keyarr, indexer = self._get_listlike_indexer(key, axis)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\indexing.py", line 1576, in _get_listlike_indexer
+    keyarr, indexer = ax._get_indexer_strict(key, axis_name)
+                      ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 6355, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['population'] not in index"
+2026-07-23 14:34:19,077 | INFO | Pipeline Started
+2026-07-23 14:35:43,192 | INFO | Collected 2790 records from World Bank
+2026-07-23 14:35:43,640 | INFO | Country enrichment completed
+2026-07-23 14:35:44,149 | INFO | Indicator enrichment completed
+2026-07-23 14:35:44,432 | INFO | Data quality validation completed
+2026-07-23 14:35:44,608 | INFO | Historical aggregation completed
+2026-07-23 14:35:44,641 | INFO | Normalization completed
+2026-07-23 14:35:44,649 | INFO | Weight assignment completed
+2026-07-23 14:35:44,683 | INFO | MCDA analysis completed
+2026-07-23 14:35:44,702 | INFO | TOPSIS ranking completed
+2026-07-23 14:35:44,704 | INFO | Financial configuration loaded
+2026-07-23 14:35:44,728 | INFO | Financial inputs prepared
+2026-07-23 14:35:44,741 | INFO | Revenue projection completed
+2026-07-23 14:35:44,746 | INFO | Cash flow generation completed
+2026-07-23 14:35:44,772 | INFO | Country financial metrics completed
+2026-07-23 14:35:44,800 | INFO | Investment recommendation completed
+2026-07-23 14:35:44,919 | INFO | Sensitivity analysis completed
+2026-07-23 14:35:45,028 | INFO | CSV export completed
+2026-07-23 14:35:45,028 | INFO | Pipeline Finished Successfully
+2026-07-23 14:43:37,343 | INFO | Pipeline Started
+2026-07-23 14:45:01,902 | INFO | Collected 2790 records from World Bank
+2026-07-23 14:45:02,313 | INFO | Country enrichment completed
+2026-07-23 14:45:02,785 | INFO | Indicator enrichment completed
+2026-07-23 14:45:03,040 | INFO | Data quality validation completed
+2026-07-23 14:45:03,200 | INFO | Historical aggregation completed
+2026-07-23 14:45:03,232 | INFO | Normalization completed
+2026-07-23 14:45:03,238 | INFO | Weight assignment completed
+2026-07-23 14:45:03,268 | INFO | MCDA analysis completed
+2026-07-23 14:45:03,286 | INFO | TOPSIS ranking completed
+2026-07-23 14:45:03,289 | ERROR | Pipeline Failed: 'revenue_growth_rate'
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 249, in run
+    financial = FinancialConfig(
+    
+        self.financial_config
+    
+    )
+  File "D:\a\market-entry-project\src\financial\config.py", line 56, in __init__
+    config["revenue_growth_rate"]
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'revenue_growth_rate'
+2026-07-23 14:47:54,122 | INFO | Pipeline Started
+2026-07-23 14:49:19,282 | INFO | Collected 2790 records from World Bank
+2026-07-23 14:49:19,685 | INFO | Country enrichment completed
+2026-07-23 14:49:20,151 | INFO | Indicator enrichment completed
+2026-07-23 14:49:20,408 | INFO | Data quality validation completed
+2026-07-23 14:49:20,568 | INFO | Historical aggregation completed
+2026-07-23 14:49:20,599 | INFO | Normalization completed
+2026-07-23 14:49:20,605 | INFO | Weight assignment completed
+2026-07-23 14:49:20,635 | INFO | MCDA analysis completed
+2026-07-23 14:49:20,652 | INFO | TOPSIS ranking completed
+2026-07-23 14:49:20,657 | ERROR | Pipeline Failed: 'market_multiplier_range'
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 249, in run
+    financial = FinancialConfig(
+    
+        self.financial_config
+    
+    )
+  File "D:\a\market-entry-project\src\financial\config.py", line 66, in __init__
+    self.market_multiplier_range = config[
+                                   ~~~~~~^
+    
+    
+        "market_multiplier_range"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    
+    
+    ]
+    ^
+KeyError: 'market_multiplier_range'
+2026-07-23 14:58:05,926 | INFO | Pipeline Started
+2026-07-23 14:59:31,763 | INFO | Collected 2790 records from World Bank
+2026-07-23 14:59:32,317 | INFO | Country enrichment completed
+2026-07-23 14:59:32,883 | INFO | Indicator enrichment completed
+2026-07-23 14:59:33,161 | INFO | Data quality validation completed
+2026-07-23 14:59:33,334 | INFO | Historical aggregation completed
+2026-07-23 14:59:33,370 | INFO | Normalization completed
+2026-07-23 14:59:33,378 | INFO | Weight assignment completed
+2026-07-23 14:59:33,412 | INFO | MCDA analysis completed
+2026-07-23 14:59:33,430 | INFO | TOPSIS ranking completed
+2026-07-23 14:59:33,433 | INFO | Financial configuration loaded
+2026-07-23 14:59:33,457 | INFO | Financial inputs prepared
+2026-07-23 14:59:33,465 | ERROR | Pipeline Failed: 'FinancialConfig' object has no attribute 'revenue_growth_rate'
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 282, in run
+    ).run()
+      ~~~^^
+  File "D:\a\market-entry-project\src\financial\revenue_projection.py", line 218, in run
+    growth_rate = self.calculate_growth_rate(
+    
+        row["gdp_growth"]
+    
+    )
+  File "D:\a\market-entry-project\src\financial\revenue_projection.py", line 179, in calculate_growth_rate
+    self.config.revenue_growth_rate
+AttributeError: 'FinancialConfig' object has no attribute 'revenue_growth_rate'. Did you mean: 'base_growth_rate'?
+2026-07-23 15:01:26,107 | INFO | Pipeline Started
+2026-07-23 15:02:50,081 | INFO | Collected 2790 records from World Bank
+2026-07-23 15:02:50,509 | INFO | Country enrichment completed
+2026-07-23 15:02:51,007 | INFO | Indicator enrichment completed
+2026-07-23 15:02:51,290 | INFO | Data quality validation completed
+2026-07-23 15:02:51,470 | INFO | Historical aggregation completed
+2026-07-23 15:02:51,505 | INFO | Normalization completed
+2026-07-23 15:02:51,512 | INFO | Weight assignment completed
+2026-07-23 15:02:51,546 | INFO | MCDA analysis completed
+2026-07-23 15:02:51,565 | INFO | TOPSIS ranking completed
+2026-07-23 15:02:51,570 | INFO | Financial configuration loaded
+2026-07-23 15:02:51,592 | INFO | Financial inputs prepared
+2026-07-23 15:02:51,598 | INFO | Revenue projection completed
+2026-07-23 15:02:51,602 | INFO | Cash flow generation completed
+2026-07-23 15:02:51,630 | INFO | Country financial metrics completed
+2026-07-23 15:02:51,636 | ERROR | Pipeline Failed: Can only merge Series or DataFrame objects, a <class 'dict'> was passed
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 358, in run
+    ).run()
+      ~~~^^
+  File "D:\a\market-entry-project\src\analysis\recommendation.py", line 69, in run
+    .merge(
+     ~~~~~^
+    
+    
+    ...<6 lines>...
+    
+    
+    )
+    ^
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\frame.py", line 12900, in merge
+    return merge(
+        self,
+    ...<10 lines>...
+        validate=validate,
+    )
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\reshape\merge.py", line 369, in merge
+    right_df = _validate_operand(right)
+  File "D:\a\market-entry-project\.venv\Lib\site-packages\pandas\core\reshape\merge.py", line 3063, in _validate_operand
+    raise TypeError(
+        f"Can only merge Series or DataFrame objects, a {type(obj)} was passed"
+    )
+TypeError: Can only merge Series or DataFrame objects, a <class 'dict'> was passed
+2026-07-23 15:08:09,845 | INFO | Pipeline Started
+2026-07-23 15:09:33,687 | INFO | Collected 2790 records from World Bank
+2026-07-23 15:09:34,140 | INFO | Country enrichment completed
+2026-07-23 15:09:34,649 | INFO | Indicator enrichment completed
+2026-07-23 15:09:34,926 | INFO | Data quality validation completed
+2026-07-23 15:09:35,104 | INFO | Historical aggregation completed
+2026-07-23 15:09:35,139 | INFO | Normalization completed
+2026-07-23 15:09:35,146 | INFO | Weight assignment completed
+2026-07-23 15:09:35,182 | INFO | MCDA analysis completed
+2026-07-23 15:09:35,202 | INFO | TOPSIS ranking completed
+2026-07-23 15:09:35,206 | INFO | Financial configuration loaded
+2026-07-23 15:09:35,231 | INFO | Financial inputs prepared
+2026-07-23 15:09:35,239 | INFO | Revenue projection completed
+2026-07-23 15:09:35,242 | INFO | Cash flow generation completed
+2026-07-23 15:09:35,272 | INFO | Country financial metrics completed
+2026-07-23 15:09:35,301 | INFO | Investment recommendation completed
+2026-07-23 15:09:35,331 | ERROR | Pipeline Failed: 'dict' object has no attribute 'merge'
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 415, in run
+    ).run()
+      ~~~^^
+  File "D:\a\market-entry-project\src\financial\sensitivity.py", line 107, in run
+    .merge(
+     ^^^^^
+AttributeError: 'dict' object has no attribute 'merge'
+2026-07-23 15:11:06,163 | INFO | Pipeline Started
+2026-07-23 15:12:29,817 | INFO | Collected 2790 records from World Bank
+2026-07-23 15:12:30,300 | INFO | Country enrichment completed
+2026-07-23 15:12:30,799 | INFO | Indicator enrichment completed
+2026-07-23 15:12:31,078 | INFO | Data quality validation completed
+2026-07-23 15:12:31,268 | INFO | Historical aggregation completed
+2026-07-23 15:12:31,306 | INFO | Normalization completed
+2026-07-23 15:12:31,313 | INFO | Weight assignment completed
+2026-07-23 15:12:31,349 | INFO | MCDA analysis completed
+2026-07-23 15:12:31,367 | INFO | TOPSIS ranking completed
+2026-07-23 15:12:31,372 | INFO | Financial configuration loaded
+2026-07-23 15:12:31,397 | INFO | Financial inputs prepared
+2026-07-23 15:12:31,405 | INFO | Revenue projection completed
+2026-07-23 15:12:31,410 | INFO | Cash flow generation completed
+2026-07-23 15:12:31,438 | INFO | Country financial metrics completed
+2026-07-23 15:12:31,466 | INFO | Investment recommendation completed
+2026-07-23 15:12:31,589 | INFO | Sensitivity analysis completed
+2026-07-23 15:12:31,703 | INFO | CSV export completed
+2026-07-23 15:12:31,703 | INFO | Pipeline Finished Successfully
+2026-07-23 15:32:40,898 | INFO | Pipeline Started
+2026-07-23 15:34:03,463 | INFO | Collected 2790 records from World Bank
+2026-07-23 15:34:03,947 | INFO | Country enrichment completed
+2026-07-23 15:34:04,591 | INFO | Indicator enrichment completed
+2026-07-23 15:34:04,930 | INFO | Data quality validation completed
+2026-07-23 15:34:05,259 | INFO | Historical aggregation completed
+2026-07-23 15:34:05,315 | INFO | Normalization completed
+2026-07-23 15:34:05,325 | INFO | Weight assignment completed
+2026-07-23 15:34:05,394 | INFO | MCDA analysis completed
+2026-07-23 15:34:05,417 | INFO | TOPSIS ranking completed
+2026-07-23 15:34:05,426 | INFO | Financial configuration loaded
+2026-07-23 15:34:05,459 | INFO | Financial inputs prepared
+2026-07-23 15:34:05,466 | INFO | Revenue projection completed
+2026-07-23 15:34:05,471 | INFO | Cash flow generation completed
+2026-07-23 15:34:05,507 | INFO | Country financial metrics completed
+2026-07-23 15:34:05,539 | INFO | Investment recommendation completed
+2026-07-23 15:34:05,540 | ERROR | Pipeline Failed: 'operating_margin'
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 415, in run
+    ).run()
+      ~~~^^
+  File "D:\a\market-entry-project\src\financial\sensitivity.py", line 48, in run
+    operating_margin = scenario["operating_margin"]
+                       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'operating_margin'
+2026-07-23 15:37:05,755 | INFO | Pipeline Started
+2026-07-23 15:38:28,966 | INFO | Collected 2790 records from World Bank
+2026-07-23 15:38:29,456 | INFO | Country enrichment completed
+2026-07-23 15:38:29,964 | INFO | Indicator enrichment completed
+2026-07-23 15:38:30,245 | INFO | Data quality validation completed
+2026-07-23 15:38:30,424 | INFO | Historical aggregation completed
+2026-07-23 15:38:30,458 | INFO | Normalization completed
+2026-07-23 15:38:30,465 | INFO | Weight assignment completed
+2026-07-23 15:38:30,499 | INFO | MCDA analysis completed
+2026-07-23 15:38:30,516 | INFO | TOPSIS ranking completed
+2026-07-23 15:38:30,525 | INFO | Financial configuration loaded
+2026-07-23 15:38:30,548 | INFO | Financial inputs prepared
+2026-07-23 15:38:30,555 | INFO | Revenue projection completed
+2026-07-23 15:38:30,559 | INFO | Cash flow generation completed
+2026-07-23 15:38:30,589 | INFO | Country financial metrics completed
+2026-07-23 15:38:30,614 | INFO | Investment recommendation completed
+2026-07-23 15:38:30,614 | ERROR | Pipeline Failed: 'operating_margin'
+Traceback (most recent call last):
+  File "D:\a\market-entry-project\src\pipeline\pipeline.py", line 415, in run
+    ).run()
+      ~~~^^
+  File "D:\a\market-entry-project\src\financial\sensitivity.py", line 48, in run
+    operating_margin = scenario["operating_margin"]
+                       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'operating_margin'
+2026-07-23 15:41:11,878 | INFO | Pipeline Started
+2026-07-23 15:42:35,807 | INFO | Collected 2790 records from World Bank
+2026-07-23 15:42:36,209 | INFO | Country enrichment completed
+2026-07-23 15:42:36,669 | INFO | Indicator enrichment completed
+2026-07-23 15:42:36,928 | INFO | Data quality validation completed
+2026-07-23 15:42:37,090 | INFO | Historical aggregation completed
+2026-07-23 15:42:37,122 | INFO | Normalization completed
+2026-07-23 15:42:37,130 | INFO | Weight assignment completed
+2026-07-23 15:42:37,160 | INFO | MCDA analysis completed
+2026-07-23 15:42:37,176 | INFO | TOPSIS ranking completed
+2026-07-23 15:42:37,181 | INFO | Financial configuration loaded
+2026-07-23 15:42:37,203 | INFO | Financial inputs prepared
+2026-07-23 15:42:37,210 | INFO | Revenue projection completed
+2026-07-23 15:42:37,215 | INFO | Cash flow generation completed
+2026-07-23 15:42:37,240 | INFO | Country financial metrics completed
+2026-07-23 15:42:37,264 | INFO | Investment recommendation completed
+2026-07-23 15:42:37,390 | INFO | Sensitivity analysis completed
+2026-07-23 15:42:37,494 | INFO | CSV export completed
+2026-07-23 15:42:37,494 | INFO | Pipeline Finished Successfully
+2026-07-23 15:46:34,172 | INFO | Pipeline Started
+2026-07-23 15:47:59,490 | INFO | Collected 2790 records from World Bank
+2026-07-23 15:47:59,959 | INFO | Country enrichment completed
+2026-07-23 15:48:00,487 | INFO | Indicator enrichment completed
+2026-07-23 15:48:00,775 | INFO | Data quality validation completed
+2026-07-23 15:48:00,970 | INFO | Historical aggregation completed
+2026-07-23 15:48:01,006 | INFO | Normalization completed
+2026-07-23 15:48:01,013 | INFO | Weight assignment completed
+2026-07-23 15:48:01,049 | INFO | MCDA analysis completed
+2026-07-23 15:48:01,067 | INFO | TOPSIS ranking completed
+2026-07-23 15:48:01,074 | INFO | Financial configuration loaded
+2026-07-23 15:48:01,100 | INFO | Financial inputs prepared
+2026-07-23 15:48:01,109 | INFO | Revenue projection completed
+2026-07-23 15:48:01,114 | INFO | Cash flow generation completed
+2026-07-23 15:48:01,150 | INFO | Country financial metrics completed
+2026-07-23 15:48:01,175 | INFO | Investment recommendation completed
+2026-07-23 15:48:01,346 | INFO | Sensitivity analysis completed
+2026-07-23 15:48:01,480 | INFO | CSV export completed
+2026-07-23 15:48:01,480 | INFO | Pipeline Finished Successfully
+2026-07-23 15:54:01,162 | INFO | Pipeline Started
+2026-07-23 15:55:29,431 | INFO | Collected 2790 records from World Bank
+2026-07-23 15:55:29,887 | INFO | Country enrichment completed
+2026-07-23 15:55:30,387 | INFO | Indicator enrichment completed
+2026-07-23 15:55:30,667 | INFO | Data quality validation completed
+2026-07-23 15:55:30,861 | INFO | Historical aggregation completed
+2026-07-23 15:55:30,897 | INFO | Normalization completed
+2026-07-23 15:55:30,904 | INFO | Weight assignment completed
+2026-07-23 15:55:30,940 | INFO | MCDA analysis completed
+2026-07-23 15:55:30,962 | INFO | TOPSIS ranking completed
+2026-07-23 15:55:30,968 | INFO | Financial configuration loaded
+2026-07-23 15:55:31,001 | INFO | Financial inputs prepared
+2026-07-23 15:55:31,008 | INFO | Revenue projection completed
+2026-07-23 15:55:31,012 | INFO | Cash flow generation completed
+2026-07-23 15:55:31,040 | INFO | Country financial metrics completed
+2026-07-23 15:55:31,067 | INFO | Investment recommendation completed
+2026-07-23 15:55:31,196 | INFO | Sensitivity analysis completed
+2026-07-23 15:55:31,304 | INFO | CSV export completed
+2026-07-23 15:55:31,304 | INFO | Pipeline Finished Successfully
+2026-07-23 15:59:51,091 | INFO | Pipeline Started
+2026-07-23 16:01:14,686 | INFO | Collected 2790 records from World Bank
+2026-07-23 16:01:15,144 | INFO | Country enrichment completed
+2026-07-23 16:01:15,675 | INFO | Indicator enrichment completed
+2026-07-23 16:01:15,950 | INFO | Data quality validation completed
+2026-07-23 16:01:16,138 | INFO | Historical aggregation completed
+2026-07-23 16:01:16,169 | INFO | Normalization completed
+2026-07-23 16:01:16,177 | INFO | Weight assignment completed
+2026-07-23 16:01:16,211 | INFO | MCDA analysis completed
+2026-07-23 16:01:16,229 | INFO | TOPSIS ranking completed
+2026-07-23 16:01:16,238 | INFO | Financial configuration loaded
+2026-07-23 16:01:16,262 | INFO | Financial inputs prepared
+2026-07-23 16:01:16,268 | INFO | Revenue projection completed
+2026-07-23 16:01:16,274 | INFO | Cash flow generation completed
+2026-07-23 16:01:16,306 | INFO | Country financial metrics completed
+2026-07-23 16:01:16,371 | INFO | Investment recommendation completed
+2026-07-23 16:01:16,511 | INFO | Sensitivity analysis completed
+2026-07-23 16:01:16,617 | INFO | CSV export completed
+2026-07-23 16:01:16,617 | INFO | Pipeline Finished Successfully
+2026-07-23 16:03:27,407 | INFO | Pipeline Started
+2026-07-23 16:04:50,369 | INFO | Collected 2790 records from World Bank
+2026-07-23 16:04:50,811 | INFO | Country enrichment completed
+2026-07-23 16:04:51,319 | INFO | Indicator enrichment completed
+2026-07-23 16:04:51,604 | INFO | Data quality validation completed
+2026-07-23 16:04:51,780 | INFO | Historical aggregation completed
+2026-07-23 16:04:51,813 | INFO | Normalization completed
+2026-07-23 16:04:51,820 | INFO | Weight assignment completed
+2026-07-23 16:04:51,855 | INFO | MCDA analysis completed
+2026-07-23 16:04:51,873 | INFO | TOPSIS ranking completed
+2026-07-23 16:04:51,882 | INFO | Financial configuration loaded
+2026-07-23 16:04:51,905 | INFO | Financial inputs prepared
+2026-07-23 16:04:51,913 | INFO | Revenue projection completed
+2026-07-23 16:04:51,917 | INFO | Cash flow generation completed
+2026-07-23 16:04:51,945 | INFO | Country financial metrics completed
+2026-07-23 16:04:51,973 | INFO | Investment recommendation completed
+2026-07-23 16:04:52,102 | INFO | Sensitivity analysis completed
+2026-07-23 16:04:52,210 | INFO | CSV export completed
+2026-07-23 16:04:52,211 | INFO | Pipeline Finished Successfully
